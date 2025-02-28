@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class GerenciadorAudio : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // Variaveis                     
+    public AudioSource sound;
+    public static GerenciadorAudio musica;
+
+    // Funções                      
+    public void PlayA()
     {
-        
+       
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
