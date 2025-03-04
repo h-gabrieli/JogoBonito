@@ -8,10 +8,13 @@ public class GerenciadorAudio : MonoBehaviour
     public AudioSource sound;
     public static GerenciadorAudio musica;
 
-    // Funções                      
+
+    // Funções    
+
+   
     public void PlayA()
     {
-       
+      
     }
 
 }
