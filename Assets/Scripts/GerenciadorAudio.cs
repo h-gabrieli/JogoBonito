@@ -6,15 +6,27 @@ public class GerenciadorAudio : MonoBehaviour
 {
     // Variaveis                     
     public AudioSource sound;
-    public static GerenciadorAudio musica;
+    public static GerenciadorAudio musica = null;
+
 
 
     // Funções    
 
-   
-    public void PlayA()
+    void Awake()
     {
-      
+        if( musica == null )
+        {
+            musica = this;
+        }
+        else
+        {
+            Destroy(musica);
+        }
+    }
+    public void PlayA(AudioClip som)
+    {
+        sound.clip = som;
+        sound.Play();
     }
 
 }
